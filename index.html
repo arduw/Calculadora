@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Calculadora</title>
+</head>
+<body>
+    <script>
+        function sumar() {
+            var a = parseInt(document.getElementById("a").value);
+            var b = parseInt(document.getElementById("b").value);
+            document.getElementById('result').innerHTML = "Resultado: " + (a + b);
+        }
+        function multiplicar() {
+            var a = parseInt(document.getElementById("a").value);
+            var b = parseInt(document.getElementById("b").value);
+            document.getElementById('result').innerHTML = "Resultado: " + (a * b);
+        }
+        function dividir() {
+            var a = parseInt(document.getElementById("a").value);
+            var b = parseInt(document.getElementById("b").value);
+            document.getElementById('result').innerHTML = "Resultado: " + (a / b);
+        }
+        function restar() {
+            var a = parseInt(document.getElementById("a").value);
+            var b = parseInt(document.getElementById("b").value);
+            document.getElementById('result').innerHTML = "Resultado: " + (a - b);
+        }
+    </script>
+    <h1>Mi Calculadora</h1>
+    Valor del A: <input id="a" type="number" />
+    <br>
+    Valor del B: <input id="b" type="number" />
+    <br>
+    <button onclick="sumar()">sumar</button>
+    <button onclick="restar()">restar</button>
+    <button onclick="multiplicar()">multiplicar</button>
+    <button onclick="dividir()">dividir</button>
+    <div id="result"></div>
+</body>
+
+</html>
